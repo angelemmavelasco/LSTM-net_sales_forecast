@@ -47,3 +47,4 @@ wheels/
 Thumbs.db
 sales.csv
 ml/data/*.csvml/data/*.csv
+ml/data/sales.csv
