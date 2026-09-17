@@ -1,5 +1,8 @@
 import pandas as pd
 from src.processor import Processor
+import json
+import tf2onnx
+from src.model import Model
 
 import matplotlib
 matplotlib.use("Agg")
@@ -130,3 +133,14 @@ X_test, y_test = p.create_sliding_windows(
 print(f"X_train shape: {X_train.shape}")
 print(f"y_train shape: {y_train.shape}")
 print(f"X_test shape:  {X_test.shape}")
+
+
+# forecaster = Model(lstm_units=64, learning_rate=0.001)
+# history = forecaster.fit(
+#     X_train=X_train,
+#     y_train=y_train,
+#     epochs=40,
+#     batch_size=32,
+#     validation_split=0.15,
+# )
+
