@@ -45,3 +45,5 @@ wheels/
 # OS
 .DS_Store
 Thumbs.db
+sales.csv
+ml/data/*.csvml/data/*.csv

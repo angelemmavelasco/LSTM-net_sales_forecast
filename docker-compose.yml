@@ -1,0 +1,13 @@
+services:
+  ml:
+    build:
+      context: ./ml
+      dockerfile: Dockerfile
+    volumes:
+      - ./ml:/workspace/ml
+      - ./artifacts:/workspace/artifacts
+    working_dir: /workspace
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    command: tail -f /dev/null
